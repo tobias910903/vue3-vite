@@ -11,15 +11,15 @@ export default defineConfig({
     }
   },
   server: {
-    // port: 8080,
-    // https: false,
-    // hotOnly: false,
-    // proxy: {
-    //   '/api': {
-    //     changeOrigin: true, // 是否跨域
-    //     target: 'http://127.0.0.1/',
-    //   }
-    // }
+    port: 8080,
+    https: false,
+    hotOnly: false,
+    proxy: {
+      '/api': {
+        changeOrigin: true, // 是否跨域
+        target: 'https://www.baidu.com/',
+      }
+    }
   },
   resolve: {
     alias: {

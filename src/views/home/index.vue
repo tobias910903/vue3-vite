@@ -3,9 +3,9 @@
 </script>
 
 <template>
-      <div>
-        11
-      </div>
+    <div>
+        home.vue
+    </div>
 </template>
 
 <style scoped>

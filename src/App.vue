@@ -4,23 +4,21 @@ import HelloWorld from '@/components/HelloWorld.vue'
 import demoStore from '@/store/modules/demoStore'
 const userStore = demoStore()
 console.log(userStore)
+
+import {getInfo} from '@/api/system'
+getInfo({name: 123}).then((res)=>{
+  console.log(res)
+})
+
 </script>
 
 <template>
-<!--  <div>-->
-<!--    <a href="https://vitejs.dev" target="_blank">-->
-<!--      <img src="/vite.svg" class="logo" alt="Vite logo" />-->
-<!--    </a>-->
-<!--    <a href="https://vuejs.org/" target="_blank">-->
-<!--      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />-->
-<!--    </a>-->
-<!--  </div>-->
   <HelloWorld msg="Vite + Vue" />
 
   <br />
-  <router-link to="/a"><el-button type="primary">A页面</el-button></router-link>
+  <router-link to="/home"><el-button type="primary">home 页面</el-button></router-link>
   &nbsp;
-  <router-link to="/b"><el-button type="primary">B页面</el-button></router-link>
+  <router-link to="/test"><el-button type="primary">test 页面</el-button></router-link>
 
 
   <router-view />
